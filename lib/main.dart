@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:grocer_ease_app/repository/todo_repository.dart';
-import 'package:grocer_ease_app/slashScreen/views/slash_screen_page.dart';
+import 'package:grocer_ease_app/slashScreen/views/splash_screen_page.dart';
 import 'package:grocer_ease_app/todo/cubit/todo_cubit.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(create: (context) => TodoCubit(TodoRepository()),
         child: const MaterialApp(
-          home: SplashScreenPage(),
+          home: SplashSceenPage(),
         ),
     );
   }
